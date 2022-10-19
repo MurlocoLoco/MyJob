@@ -11,6 +11,7 @@ export interface ITarefas {
     titulo: string,
     descricao: string,
     completado: boolean,
+    id: string
 }
 
 export interface IContextTarefas {
@@ -23,11 +24,13 @@ export const BaseProvider: React.FC<Props> = ({ children }) => {
         titulo: "Teste",
         descricao: "Testando",
         completado: false,
+        id: "h1v4"
     },
     {
         titulo: "Teste2",
         descricao: "Testando2",
         completado: true,
+        id: "pasd9"
     }]
     const [tarefas, setTarefas] = React.useState(initialState);
     

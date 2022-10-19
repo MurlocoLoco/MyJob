@@ -1,6 +1,7 @@
 import styles from "./Form.module.css";
 import { useBase, IContextTarefas, ITarefas } from "../../providers/base";
 import React, { useState } from "react";
+import { v4 as uuid } from 'uuid'
 
 const Form = () => {
     const { tarefas, setTarefas } = useBase() as IContextTarefas;
@@ -13,7 +14,8 @@ const Form = () => {
         const novaTarefa: ITarefas = {
             titulo,
             descricao,
-            completado: false
+            completado: false,
+            id: uuid()
         };
         setTarefas([...tarefas, novaTarefa]);
         limparForm();
@@ -25,8 +27,8 @@ const Form = () => {
     return (
         <div className={styles.formmain} >
             <form className={styles.form} onSubmit={addTarefa}>
-                <input onChange={e => setTitulo(e.target.value)} value={titulo} name="titulo" type="text" placeholder="Digite um titulo." />
-                <textarea onChange={e => setDescricao(e.target.value)} value={descricao} name="descricao" placeholder="Digite uma descrição."></textarea>
+                <input onChange={e => setTitulo(e.target.value)} value={titulo} name="titulo" type="text" placeholder="Digite um titulo." required/>
+                <textarea onChange={e => setDescricao(e.target.value)} value={descricao} name="descricao" placeholder="Digite uma descrição." required></textarea>
                 <button type="submit">Enviar</button>
             </form>
         </div>
