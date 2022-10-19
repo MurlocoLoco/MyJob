@@ -1,5 +1,44 @@
-.listmain{
+.listMain{
     width: 70vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.562);
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.listMain ul{
+    width: 60vw;
+    height: 60vh;
+    color: white;
+    
+}
+.item{
+    width: 60vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.completado {
+    width: 60vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: rgba(14, 73, 12, 0.6);
+}
+
+.listMain ul li h3{
+    margin-top: 0;
+}
+
