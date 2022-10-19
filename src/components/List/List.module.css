@@ -1,4 +1,4 @@
-.listMain{
+.listMain {
     width: 70vw;
     height: 80vh;
     background-color: rgba(0, 0, 0, 0.4);
@@ -6,39 +6,65 @@
     justify-content: center;
     align-items: center;
 }
-.listMain ul{
+
+.listMain ul {
     width: 60vw;
     height: 60vh;
     color: white;
-    
+    overflow-x: hidden;
+
 }
-.item{
-    width: 60vw;
+
+.item {
+    width: 55vw;
     height: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
+    margin-top: 4px;
     border-radius: 15px;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
 .completado {
-    width: 60vw;
+    width: 55vw;
     height: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
+    margin-top: 4px;
     border-radius: 15px;
     cursor: pointer;
     background-color: rgba(14, 73, 12, 0.6);
 }
 
-.listMain ul li h3{
+.listMain ul li h3 {
     margin-top: 0;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

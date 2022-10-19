@@ -1,0 +1,10 @@
+.main {
+    width: 70vw;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.progress {
+    transition: all ease 0.5s;
+    height: 20vh;
+    background-color: rgb(54, 217, 30);
+}
